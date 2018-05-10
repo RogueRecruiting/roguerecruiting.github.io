@@ -6,6 +6,10 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+#logo {
+  max-height: 2rem;
+}
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #24b30e;
@@ -2453,6 +2457,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background: url(../img/testbackground.png) center;
   background-size: cover;
+  max-height: 30rem;
 }
 
 @media (max-width: 767.98px) {
