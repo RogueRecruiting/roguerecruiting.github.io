@@ -2458,6 +2458,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url(../img/testbackground.png) center;
   background-size: cover;
   max-height: 30rem;
+  opacity: 0.7;
 }
 
 @media (max-width: 767.98px) {
