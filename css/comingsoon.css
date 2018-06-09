@@ -160,6 +160,14 @@ b.light-color {
   color: #444;
 }
 
+#logo-main {
+  width: 30vw;
+  height: 25vh;
+}
+
+#contact-button {
+  /* background: #9c0000; */
+}
 .icon {
   font-size: 1.1em;
   display: inline-block;
@@ -269,9 +277,9 @@ b.light-color {
 .main-area .notify-btn {
   padding: 13px 35px;
   border-radius: 50px;
-  border: 2px solid #24b30e;
+  border: 2px solid #9c0000;
   color: #fff;
-  background: #24b30e;
+  background: #9c0000;
 }
 
 .main-area .notify-btn:hover {
