@@ -205,7 +205,7 @@
 
         <fieldset class="pure-group">
           <label for="dob">* DOB (ex. 01/01/1974): </label>
-          <input id="dob" name="DOB" required placeholder="01/01/1974" />
+          <input id="dob" name="DOB" type="date" required placeholder="01/01/1974" />
         </fieldset>
 
         <fieldset class="pure-group">
@@ -216,21 +216,6 @@
         <fieldset class="pure-group">
           <label for="currentjob">* Current Employment Status (Full-time, Part-Time, Student, Between Jobs): </label>
 
-          <!-- <label for="currentjob" class="pure-radio">
-            <input id="currentjob" type="radio" name="currentjob" value="Full-Time" checked> Full-Time
-          </label>
-
-          <label for="currentjob" class="pure-radio">
-            <input id="currentjob" type="radio" name="currentjob" value="Part-Time"> Part-Time
-          </label>
-
-          <label for="currentjob" class="pure-radio">
-            <input id="currentjob" type="radio" name="currentjob" value="Student"> Student
-          </label>
-
-          <label for="currentjob" class="pure-radio">
-            <input id="currentjob" type="radio" name="currentjob" value="Between Jobs"> Between Jobs
-          </label> -->
           <select id="currentjob" name="CurrentJob" required class="pure-input-1-2">
             <option>Full-Time</option>
             <option>Part-Time</option>
@@ -252,8 +237,8 @@
         </fieldset>
 
         <fieldset class="pure-group">
-          <label for="startdate">* Available Start Date (*insert calendar here*): </label>
-          <input id="startdate" name="StartDate" required placeholder="ex. 10/01/2018" />
+          <label for="startdate">* Available Start Date: </label>
+          <input id="startdate" name="StartDate" type="date" required placeholder="ex. 10/01/2018" />
         </fieldset>
 
         <fieldset class="pure-group">
@@ -291,8 +276,11 @@
         </fieldset>
 
         <fieldset class="pure-group">
-          <label for="jobdates1">* Dates Employed (*insert calendar here*): </label>
-          <input id="jobdates1" name="jobdates1" required placeholder="ex. 10/01/2018" />
+          <label for="jobdates1">* Dates Employed: </label>
+          <label for="jobdates1start">Start Date</label>
+          <input id="jobdates1start" name="jobdates1start" type="date" required placeholder="ex. 10/01/2018" />
+          <label for="jobdates1start">End Date</label>
+          <input id="jobdates1end" name="jobdates1end" type="date" required placeholder="ex. 10/01/2018" />
         </fieldset>
 
         <fieldset class="pure-group">
@@ -331,8 +319,11 @@
         </fieldset>
 
         <fieldset class="pure-group">
-          <label for="jobdates2">Dates Employed (*insert calendar here*): </label>
-          <input id="jobdates2" name="jobdates2" placeholder="ex. 10/01/2018" />
+          <label for="jobdates2">Dates Employed: </label>
+          <label for="jobdates2start">Start Date</label>
+          <input id="jobdates2start" name="jobdates2start" type="date" placeholder="ex. 10/01/2005" />
+          <label for="jobdates2start">End Date</label>
+          <input id="jobdates2end" name="jobdates2end" type="date" placeholder="ex. 10/01/2008" />
         </fieldset>
 
         <fieldset class="pure-group">
@@ -368,8 +359,11 @@
         </fieldset>
 
         <fieldset class="pure-group">
-          <label for="jobdates3">Dates Employed (*insert calendar here*): </label>
-          <input id="jobdates3" name="jobdates3" placeholder="ex. 10/01/2018" />
+          <label for="jobdates3">Dates Employed: </label>
+          <label for="jobdates3start">Start Date</label>
+          <input id="jobdates3start" name="jobdates3start" type="date" placeholder="ex. 10/01/2005" />
+          <label for="jobdates3start">End Date</label>
+          <input id="jobdates3end" name="jobdates3end" type="date" placeholder="ex. 10/01/2008" />
         </fieldset>
 
         <fieldset class="pure-group">
