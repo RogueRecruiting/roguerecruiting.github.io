@@ -159,9 +159,7 @@
     <div class="container">
       <h2 class="content-head is-center">APPLICATION</h2>
       <aside>
-        <p>Please fill out all
-          <em>Application</em>
-          fields below.
+        <p>Please fill out all Application fields below.
         </p>
       </aside>
 
@@ -171,65 +169,112 @@
 
         <fieldset class="pure-group">
           <label for="name">* Name: </label>
-          <input id="name" name="name" required placeholder="first last" />
+          <input id="name" name="Name" required placeholder="First Last" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="phone">* Phone: </label>
-          <input id="phone" name="phone" required placeholder="enter number" />
+          <input id="phone" name="Phone" type="phone" required placeholder="ex. (555) 555-5555" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="email">
-            <em>* Your</em> Email Address:</label>
-          <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+            * Your Email Address:</label>
+          <input id="email" name="Email" type="email" value="" required placeholder="Your.Name@Email.com" />
           <span id="email-invalid" style="display:none">
             Must be a valid email address</span>
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="address">* City, State or Full Address: </label>
-          <input id="address" name="address" required placeholder="123 Main St, New York, NY" />
+          <input id="address" name="Address" required placeholder="123 Main St, New York, NY" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="license">* Driver License (Yes/No): </label>
-          <input id="license" name="license" required placeholder="Yes or No" />
+
+          <label for="license" class="pure-radio">
+            <input id="license" type="radio" name="License" value="yes" checked> Yes
+          </label>
+
+          <label for="license" class="pure-radio">
+            <input id="license" type="radio" name="License" value="no"> No
+          </label>
+
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="dob">* DOB (ex. 01/01/1974): </label>
-          <input id="dob" name="dob" required placeholder="01/01/1974" />
+          <input id="dob" name="DOB" required placeholder="01/01/1974" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="ssn">SSN (ex. 555-55-5555): </label>
-          <input id="ssn" name="ssn" placeholder="555-55-5555" />
+          <input id="ssn" name="SSN" placeholder="555-55-5555" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="currentjob">* Current Employment Status (Full-time, Part-Time, Student, Between Jobs): </label>
-          <input id="currentjob" name="currentjob" required placeholder="Full-time" />
+
+          <!-- <label for="currentjob" class="pure-radio">
+            <input id="currentjob" type="radio" name="currentjob" value="Full-Time" checked> Full-Time
+          </label>
+
+          <label for="currentjob" class="pure-radio">
+            <input id="currentjob" type="radio" name="currentjob" value="Part-Time"> Part-Time
+          </label>
+
+          <label for="currentjob" class="pure-radio">
+            <input id="currentjob" type="radio" name="currentjob" value="Student"> Student
+          </label>
+
+          <label for="currentjob" class="pure-radio">
+            <input id="currentjob" type="radio" name="currentjob" value="Between Jobs"> Between Jobs
+          </label> -->
+          <select id="currentjob" name="CurrentJob" required class="pure-input-1-2">
+            <option>Full-Time</option>
+            <option>Part-Time</option>
+            <option>Student</option>
+            <option>Between Jobs</option>
+          </select>
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="authorizedus">* Authorized to work in the United States? (Yes/No): </label>
-          <input id="authorizedus" name="authorizedus" required placeholder="Yes" />
+
+          <label for="authorizedus" class="pure-radio">
+            <input id="authorizedus" type="radio" name="AuthorizedUS" value="Yes" checked> Yes
+          </label>
+
+          <label for="authorizedus" class="pure-radio">
+            <input id="authorizedus" type="radio" name="AuthorizedUS" value="No"> No
+          </label>
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="startdate">* Available Start Date (*insert calendar here*): </label>
-          <input id="startdate" name="startdate" required placeholder="ex. 10/01/2018" />
+          <input id="startdate" name="StartDate" required placeholder="ex. 10/01/2018" />
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="schedule">* Type of work desired (Full-Time, Part-Time, On-Call, Travel): </label>
-          <input id="schedule" name="schedule" required placeholder="ex. Full-Time" />
+
+          <select id="schedule" name="Schedule" required class="pure-input-1-2">
+            <option>Full-Time</option>
+            <option>Part-Time</option>
+            <option>On-Call</option>
+            <option>Travel</option>
+          </select>
         </fieldset>
 
         <fieldset class="pure-group">
           <label for="preferredcom">* Preferred method of communication (Phone, Text, Email, Any/All): </label>
-          <input id="preferredcom" name="preferredcom" required placeholder="ex. Phone" />
+          <select id="preferredcom" name="PreferredCom" required class="pure-input-1-2">
+            <option>Phone</option>
+            <option>Text</option>
+            <option>Email</option>
+            <option>Any/All</option>
+          </select>
         </fieldset>
         <hr>
         <h4>Job History</h4>
@@ -257,7 +302,15 @@
 
         <fieldset class="pure-group">
           <label for="reference1">* Reference (Title, Name, Contact): </label>
-          <input id="reference1" name="reference1" required placeholder="ex. Manager, Director, etc"></input>
+          <span>
+            <label for="reference1title">Title</label>
+            <input id="reference1title" name="reference1title" required placeholder="ex. Manager, Director, etc"></input>
+            <label for="reference1name">Name</label>
+            <input id="reference1name" name="reference1name" required placeholder="ex. John Smith"></input>
+            <label for="reference1phone">Contact Number</label>
+            <input id="reference1phone" name="reference1phone" type="phone" required placeholder="ex. (888-555-5555)"></input>
+
+          </span>
         </fieldset>
 
         <fieldset class="pure-group">
@@ -289,7 +342,12 @@
 
         <fieldset class="pure-group">
           <label for="reference2">Reference (Title, Name, Contact): </label>
-          <input id="reference2" name="reference2" placeholder="ex. Manager, Director, etc"></input>
+          <label for="reference2title">Title</label>
+          <input id="reference2title" name="reference2title" placeholder="ex. Manager, Director, etc"></input>
+          <label for="reference2name">Name</label>
+          <input id="reference2name" name="reference2name" placeholder="ex. John Smith"></input>
+          <label for="reference2phone">Contact Number</label>
+          <input id="reference2phone" name="reference2phone" type="phone" placeholder="ex. (888-555-5555)"></input>
         </fieldset>
 
         <fieldset class="pure-group">
@@ -321,7 +379,12 @@
 
         <fieldset class="pure-group">
           <label for="reference3">Reference (Title, Name, Contact): </label>
-          <input id="reference3" name="reference3" placeholder="ex. Manager, Director, etc"></input>
+          <label for="reference3title">Title</label>
+          <input id="reference3title" name="reference3title" placeholder="ex. Manager, Director, etc"></input>
+          <label for="reference3name">Name</label>
+          <input id="reference3name" name="reference3name" placeholder="ex. John Smith"></input>
+          <label for="reference3phone">Contact Number</label>
+          <input id="reference3phone" name="reference3phone" type="phone" placeholder="ex. (888-555-5555)"></input>
         </fieldset>
 
         <fieldset class="pure-group">
@@ -338,9 +401,9 @@
       <!-- Customise the Thankyou Message People See when they submit the form: -->
       <div style="display:none;" id="thankyou_message">
         <h2>
-          <em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+          Thanks for contacting us! We will get back to you soon!</h2>
         <em>* Resume upload coming soon - please email resume to
-          <a class="notify-btn" href="mailto:contact@rogue-recruiting.com?subject=resume" id="contact-button">
+          <a class="notify-btn" href="mailto:contact@rogue-recruiting.com?subject=Resume" id="contact-button">
             <b>Rogue Recruiting</b>
           </a>
         </em>
