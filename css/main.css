@@ -2629,6 +2629,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+#background {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.9;
+}
+
 .feature-area {
   /* background: url(../img/) center; */
   background: #979196;
