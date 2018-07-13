@@ -1940,9 +1940,9 @@ h6 {
 }
 
 @media (max-width: 960px) {
-  #header {
-    /* height: 76px; */
-  }
+  /* #header {
+    height: 76px;
+  } */
   #header hr {
     display: none;
   }
@@ -2389,7 +2389,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: -webkit-linear-gradient(0deg, #f45622 0%, #f53e54 100%);
   background: -ms-linear-gradient(0deg, #f45622 0%, #f53e54 100%); */
   background-color: #9c0000;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
