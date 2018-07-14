@@ -1936,7 +1936,12 @@ h6 {
   background-color: #fff;
 }
 #logo-header {
-  max-height: 17vh;
+  /* max-height: 17vh; */
+}
+
+#logomain {
+  max-width: 25vw;
+  max-height: 30vh;
 }
 
 @media (max-width: 960px) {
@@ -1947,7 +1952,7 @@ h6 {
     display: none;
   }
   #logo {
-    max-height: 8vh;
+    max-height: 17vh;
     float: left;
   }
   #logo-header {
@@ -2389,7 +2394,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: -webkit-linear-gradient(0deg, #f45622 0%, #f53e54 100%);
   background: -ms-linear-gradient(0deg, #f45622 0%, #f53e54 100%); */
   background-color: #9c0000;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -2466,18 +2471,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 0;
 }
 
-.banner-area {
-  /* background: url(../img/bg1.png) center; */
-  background: #000;
+.banner-areahome {
+  background: url(../img/roguebackground.png) center;
+  /* background: #000; */
   color: #333;
-  background-size: 700px;
-  max-height: 34rem;
-  /* opacity: 0.7; */
+  /* background-size: 800px; */
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.banner-area {
+  background: url(../img/roguebackground.png) center;
+  /* background: #000; */
+  color: #333;
+  /* background-size: 700px; */
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
 }
 
 @media (max-width: 767.98px) {
   .banner-area .fullscreen {
-    height: 700px !important;
+    height: 50px !important;
   }
 }
 
