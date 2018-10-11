@@ -2472,17 +2472,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-areahome {
-  background: url(../img/roguebackground.png) center;
+  background: url(../img/newbackground.png) center;
   /* background: #000; */
   color: #333;
   /* background-size: 800px; */
   max-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .banner-area {
-  background: url(../img/roguebackground.png) center;
+  background: url(../img/newbackground.png) center;
   /* background: #000; */
   color: #333;
   /* background-size: 700px; */
